@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Naoto's CODE</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div id="wrapper"><!-- #wrapper -->
+
+	<header><!-- header -->
+		<h1><a href="#">Naoto's CODE</a></h1>
+		<h2>Development</h2>
+    <a href="http://www.flickr.com/photos/naoto0422/">
+      <img src="images/wall1.jpg" width="240" height="159" alt=""> <img src="images/wall2.jpg" width="240" height="159" alt=""> <img src="images/wall3.jpg" width="240" height="159" alt="">
+    </a>
+    <!-- header image -->
+	</header><!-- end of header -->
+	
+	<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Github</a>
+			    <ul>
+   					<li><a href="#">clustter</a></li>
+   					<li><a href="#">TwitterBookmark</a></li>
+   					<li><a href="#">Citrus-Plugins</a></li>
+   					<li><a href="#">Crown</a></li>
+   					<li><a href="#">Fortunella</a></li>
+   				</ul>
+  			</li>
+				<li><a href="#">Services</a>
+					<ul>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Flickr</a></li>
+						<li><a href="#">mixi</a></li>
+						<li><a href="#">Gist</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->
+
+
+	<section id="main"><!-- #main content and sidebar area -->
+		<section id="container"><!-- #container -->
+			<section id="content"><!-- #content -->
+			
+        		<article>
+							<h2><a href="#">Explore Beautiful, Strange, Exotic Lands</a></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+						</article>
+						
+        		<article>
+							<h2><a href="#">Adventure of a Lifetime</a></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+						</article>
+						
+			</section><!-- end of #content -->
+		</section><!-- end of #container -->
+
+		<aside id="sidebar"><!-- sidebar -->
+				<h3>Make WEB Service</h3>
+					<ul>
+						<li><a href="http://otolabo.ddo.jp:3001/cluster/top/">clustter</a></li>
+						<li><a href="http://otolabo.ddo.jp:3000/bookmarks/index/">TwitterBookmark</a></li>
+					</ul>
+          <h3>Twitter</h3>
+          <div id="twitter">
+             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+             <script>
+                new TWTR.Widget({
+                      version: 2,
+                      type: 'profile',
+                      rpp: 4,
+                      interval: 6000,
+                      width: 215,
+                      height: 300,
+                      theme: {
+                        shell: {
+                          background: '#ffeeee',
+                          color: '#333333',
+                        },
+                        tweets: {
+                          background: '#ffffff',
+                          color: '#333333',
+                          links: '#0067bb'
+                        }
+                      },
+                      features: {
+                        scrollbar: false,
+                        loop: false,
+                        live: false,
+                        hashtags: true,
+                        mestamp: true,
+                        avatars: false,
+                        behavior: 'all'
+                      }
+                    }).render().setUser('naotos').start();
+            </script>
+        </div>
+        <!-- Start of Flickr Badge -->
+        <h3>Flickr</h3>
+            <style type="text/css">
+              .zg_div {margin:0px 5px 5px 0px; width:117px;}
+              .zg_div_inner {border: solid 1px #000000; background-color:#ffffff;  color:#666666; text-align:center; font-family:arial, helvetica; font-size:11px;}
+              .zg_div a, .zg_div a:hover, .zg_div a:visited {color:#3993ff; background:inherit !important; text-decoration:none !important;}
+            </style>
+            <script type="text/javascript">
+              zg_insert_badge = function() {
+                var zg_bg_color = 'ffffff';
+                var zgi_url = 'http://www.flickr.com/apps/badge/badge_iframe.gne?zg_bg_color='+zg_bg_color+'&zg_person_id=28677349%40N04';
+                document.write('<iframe style="background-color:#'+zg_bg_color+'; border-color:#'+zg_bg_color+'; border:none;" width="113" height="151" frameborder="0" scrolling="no" src="'+zgi_url+'" title="Flickr Badge"><\/iframe>');
+                if (document.getElementById) document.write('<div id="zg_whatlink"><a href="http://www.flickr.com/badge.gne"  style="color:#3993ff;" onclick="zg_toggleWhat(); return false;">What is this?<\/a><\/div>');
+              }
+              zg_toggleWhat = function() {
+                document.getElementById('zg_whatdiv').style.display = (document.getElementById('zg_whatdiv').style.display != 'none') ? 'none' : 'block';
+                document.getElementById('zg_whatlink').style.display = (document.getElementById('zg_whatdiv').style.display != 'none') ? 'none' : 'block';
+                return false;
+              }
+            </script>
+            <div class="zg_div"><div class="zg_div_inner"><a href="http://www.flickr.com">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><br>
+                <script type="text/javascript">zg_insert_badge();</script>
+                <div id="zg_whatdiv">This is a Flickr badge showing public photos and videos from <a href="http://www.flickr.com/photos/28677349@N04">Naoto SHINGAKI</a>. Make your own badge <a href="http://www.flickr.com/badge.gne">here</a>.</div>
+                <script type="text/javascript">if (document.getElementById) document.getElementById('zg_whatdiv').style.display = 'none';</script>
+              </div>
+            </div>
+<!-- End of Flickr Badge -->
+
+
+		</aside><!-- end of sidebar -->
+
+	</section><!-- end of #main content and sidebar-->
+
+	<footer>
+		<section id="footer-area">
+
+			<section id="footer-outer-block">
+					<aside id="first" class="footer-segment">
+							<h3>Popular Spots</h3>
+								<ul>
+									<li><a href="#">one linkylink</a></li>
+									<li><a href="#">two linkylinks</a></li>
+									<li><a href="#">three linkylinks</a></li>
+									<li><a href="#">four linkylinks</a></li>
+									<li><a href="#">five linkylinks</a></li>
+								</ul>
+					</aside><!-- end of #first footer segment -->
+
+					<aside id="second" class="footer-segment">
+							<h3>Adventure Travel</h3>
+								<ul>
+									<li><a href="#">one linkylink</a></li>
+									<li><a href="#">two linkylinks</a></li>
+									<li><a href="#">three linkylinks</a></li>
+									<li><a href="#">four linkylinks</a></li>
+									<li><a href="#">five linkylinks</a></li>
+								</ul>
+					</aside><!-- end of #second footer segment -->
+
+					<aside id="third" class="footer-segment">
+							<h3>River Cruises</h3>
+								<ul>
+									<li><a href="#">one linkylink</a></li>
+									<li><a href="#">two linkylinks</a></li>
+									<li><a href="#">three linkylinks</a></li>
+									<li><a href="#">four linkylinks</a></li>
+									<li><a href="#">five linkylinks</a></li>
+								</ul>
+					</aside><!-- end of #third footer segment -->
+					
+					<aside id="fourth" class="footer-segment">
+							<h3>Recent Testimonial</h3>
+								<p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+					</aside><!-- end of #fourth footer segment -->
+
+			</section><!-- end of #footer-outer-block -->
+
+		</section><!-- end of #footer-area -->
+	</footer>
+
+</div><!-- #wrapper -->
+</body>
+</html>
