@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+body {
+  padding-top: 70px;
+}
+.navbar-custom {
+  background-color: #1A374D;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #B1D0E0;
+}
+.about-line {
+  padding-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-line > .label {
+  font-weight: bold;
+  padding-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.diary .date {
+  font-weight: bold;
+  color: #696969;
+  padding-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.diary .title a {
+  text-decoration: none;
 }
