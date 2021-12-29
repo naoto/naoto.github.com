@@ -1,7 +1,28 @@
+body {
+  padding-top: 70px;
+}
 .navbar-custom {
   background-color: #1A374D;
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
   color: #B1D0E0;
+}
+.about-line {
+  padding-top: 20px;
+}
+
+.about-line > .label {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.diary .date {
+  font-weight: bold;
+  color: #696969;
+  padding-right: 10px;
+}
+
+.diary .title a {
+  text-decoration: none;
 }
