@@ -13,7 +13,7 @@ const Diary: React.FC = () => {
 
   const fetchDiary = async (id:string) => {
     try {
-      const response = await fetch(`https://naoto.github.io/diary/${id}.json`)
+      const response = await fetch(`https://naoto.github.io/diary_log/${id}.json`)
       const data = await response.json()
       setDiary(data)
     } catch(e) {
