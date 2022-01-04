@@ -10,7 +10,7 @@ const Welcome: React.FC = () => {
   const [diarys, setDiarys] = useState<Diary[]>([])
   const fetchDiaryList = async () => {
     try {
-      const response = await fetch(`https://naoto.github.io/diary_log/list.json`)
+      const response = await fetch(`https://naoto.github.io/diary/list.json`)
       const data = await response.json()
       setDiarys(data)
     } catch(e) {
