@@ -12,7 +12,13 @@ const Welcome: React.FC = () => {
     try {
       const response = await fetch(`https://naoto.github.io/diary_log/list.json`)
       const data = await response.json()
-      setDiarys(data)
+      const data_sort: Diary[] = data.sort((n1: Diary, n2: Diary) => {
+        const n1_date = Date.parse(n1.date)
+        const n2_date = Date.parse(n2.date)
+
+        return n2_date - n1_date
+      })
+      setDiarys(data_sort)
     } catch(e) {
       console.error(e)
     }
@@ -20,7 +26,7 @@ const Welcome: React.FC = () => {
 
   useEffect(() => {
     fetchDiaryList()
-  }, [])
+  }, [fetchDiaryList])
 
   return (
     <>
