@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ListGroup } from 'react-bootstrap'
 
+import Heatmap from '../parts/heatmap'
+
 const Welcome: React.FC = () => {
   type Diary = {
     title: string
@@ -31,6 +33,7 @@ const Welcome: React.FC = () => {
   return (
     <>
     <h1>Diary</h1>
+    <Heatmap diaries={diarys} />
     <ListGroup variant="flush" className='diary'>
       {diarys.map(item => (
         <ListGroup.Item key={item.date}>
