@@ -6,20 +6,24 @@ import Header from './parts/header'
 import Welcome from './pages/welcome'
 import Diary from './pages/diary'
 import About from './pages/about'
-import { Container } from 'react-bootstrap'
+import { Container,Row,Col } from 'react-bootstrap'
 
 function App() {
   return (
     <>
     <Header />
     <Container>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/diary/:id" element={<Diary />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </BrowserRouter>
+      <Row>
+        <Col md="8">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Welcome />} />
+              <Route path="/diary/:id" element={<Diary />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </BrowserRouter>
+        </Col>
+      </Row>
     </Container>
     </>
   );
