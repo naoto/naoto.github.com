@@ -20,7 +20,7 @@ const Heatmap: React.FC<Props> = props => {
     <div className="container">
       <div>
         <CalendarHeatmap
-          startDate={new Date("2021-01-01")}
+          startDate={new Date("2022-01-01")}
           endDate={new Date("2022-01-01")}
           values={diaries}
           classForValue={(value) => {
